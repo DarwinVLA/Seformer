@@ -21,4 +21,5 @@ from Seformer.Shell import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('template/', views.template),
+    path('footer/', views.footer),
 ]
