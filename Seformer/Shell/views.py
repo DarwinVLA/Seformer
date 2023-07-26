@@ -5,8 +5,7 @@ from django.http import request, response
 
 
 def template(request):
-    return render(request, "index.html")
+    return render(request, "inicio.html")
 
 
-def footer(request):
-    return render(request, "footer.html")
+

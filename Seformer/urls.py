@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Seformer.Shell import views
+from Shell import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('template/', views.template),
-    path('footer/', views.footer),
+    path('', views.template)
 ]
