@@ -1,0 +1,36 @@
+.banner {
+    height: 40vh;
+    max-height: 40vh;
+    background: url(../img/imagen4.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 40vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &-title {
+        width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        position: relative;
+        color: #fff;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.row-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
