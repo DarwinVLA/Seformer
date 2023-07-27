@@ -7,5 +7,8 @@ from django.http import request, response
 def template(request):
     return render(request, "inicio.html")
 
+def sobre_nosotros(request):
+   return render(request, "sobre_nosotros.html")
+
 
 
