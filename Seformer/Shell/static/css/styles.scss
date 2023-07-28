@@ -57,6 +57,16 @@
     }
 }
 
+.bancos-image {
+    width: 150px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .card-docentes-body {
         p {
