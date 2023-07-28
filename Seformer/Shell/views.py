@@ -5,10 +5,10 @@ from django.http import request, response
 
 
 def template(request):
-    return render(request, "inicio.html")
+    return render(request, "inicio.html", {'Titulo': 'Seformer'})
 
 def sobre_nosotros(request):
-   return render(request, "sobre_nosotros.html")
+   return render(request, "sobre_nosotros.html", {'Titulo': 'Seformer'})
 
 
 
