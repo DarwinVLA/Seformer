@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block main_content %}
+<!---->
 <div class="container my-4">
   <div class="row justify-content-center">
     <div class="col-2 d-none d-lg-block">
@@ -25,7 +26,7 @@
         class="scrollspy-example-2" tabindex="0">
         <div id="item-1">
           <h4>Acerca de Seformer</h4>
-          <p>El propósito de este centro es ofrecer tanto modalidades presenciales como no presenciales para facilitar
+          <p class="text-justify">El propósito de este centro es ofrecer tanto modalidades presenciales como no presenciales para facilitar
             el
             acceso a la enseñanza técnica y tecnológica a todas las personas que desean cursar dichos programas,
             independientemente
@@ -36,14 +37,14 @@
         </div>
         <div id="item-1-1">
           <h5>Mision</h5>
-          <p> Brindar oportunidades de capacitación y actualización a la sociedad, permitiendo el mejoramiento de las
+          <p  class="text-justify" > Brindar oportunidades de capacitación y actualización a la sociedad, permitiendo el mejoramiento de las
             condiciones de vida
             a nivel personal, familiar, profesional y comunitario. A su vez promover la productividad y competitividad
             de las organizaciones.</p>
         </div>
         <div id="item-1-2">
           <h5>Visión</h5>
-          <p>Ser un Centro de capacitación continúo reconocido por la comunidad a nivel nacional e internacional que
+          <p  class="text-justify" >Ser un Centro de capacitación continúo reconocido por la comunidad a nivel nacional e internacional que
             genere soluciones y
             mejores condiciones de vida de los habitantes.</p>
         </div>
@@ -52,32 +53,67 @@
           <ul>
             <li>
               <span class="fw-semibold">Igualdad de Oportunidades:</span>
-              <p>Garantizar a las personas que tengan los mismos derechos y posibilidades de acceso, permanencia,
+              <p class="text-justify">Garantizar a las personas que tengan los mismos derechos y posibilidades de acceso, permanencia,
                 movilidad y egreso.</p>
             </li>
             <li>
               <span class="fw-semibold">Autonomía responsables:</span>
-              <p>Cumplimiento de su misión y visión organizacional.</p>
+              <p  class="text-justify">Cumplimiento de su misión y visión organizacional.</p>
             </li>
             <li>
               <span class="fw-semibold">Calidad: </span>
-              <p>Innovación en sus actividades y programas académicos a fin de asegurar el mejoramiento continuo en
+              <p  class="text-justify">Innovación en sus actividades y programas académicos a fin de asegurar el mejoramiento continuo en
                 todos sus niveles de formación, educación continúa, capacitación e investigación.</p>
             </li>
           </ul>
         </div>
         <div id="item-2">
           <h4>Nuestros Docentes</h4>
-          <div style="padding: 20px;"></div>
-        </div>
+          <div class="m-3">
+            <div class="card-group mb-3">
+              <div class="card">
+                <img src="{% static 'img/imagen3.png' %}" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="{% static 'img/imagen3.png' %}" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="{% static 'img/imagen3.png' %}" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div>
+          </div>
         <div id="item-3">
           <h4>Metodología de Apredizaje</h4>
-          <p>Nuestros cursos y talleres están diseñados para fomentar el aprendizaje activo y participativo bajo la
+          <p class="text-justify">Nuestros cursos y talleres están diseñados para fomentar el aprendizaje activo y participativo bajo la
             normativa del trabajo cooperativa - participativo</p>
         </div>
         <div id="item-4">
           <h4>¿A quién va Dirigido?</h4>
-          <p>Este programa está diseñado a todas aquellas personas que deseen formarse dentro del ámbito de Terapias
+          <p class="text-justify">Este programa está diseñado a todas aquellas personas que deseen formarse dentro del ámbito de Terapias
             Alternativas</p>
         </div>
       </div>
