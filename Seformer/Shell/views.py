@@ -10,5 +10,8 @@ def template(request):
 def sobre_nosotros(request):
    return render(request, "sobre_nosotros.html", {'Titulo': 'Seformer'})
 
+def sobre_nosotros(request):
+   return render(request, "sobre_nosotros.html", {'Titulo': 'Seformer'})
+
 
 
