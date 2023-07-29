@@ -23,4 +23,5 @@ urlpatterns = [
     path('', views.template, name='inicio'),
     path('sobre_nosotros/', views.sobre_nosotros, name='sobre_nosotros'),
     path('admision_requisitos/', views.admision_requisitos, name='admision_requisitos'),
+    path('capacitaciones/', views.capacitaciones, name='capacitaciones'),
 ]

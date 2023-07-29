@@ -1,0 +1,138 @@
+{% extends "template.html" %}
+{% load static %}
+
+{% block main_content %}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+
+        <!-- ACCORDION -->
+        <div class="col-12 col-md-10 mb-4">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            PROCESO 1: MASAJETERAPIA
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p><span class="fw-semibold">MÓDULO I: </span>MASAJETERAPIA RELAJANTE</p>
+                            <p><span class="fw-semibold">MÓDULO II: </span>MASAJES TERAPÉUTICOS DE SPA</p>
+                            <p><span class="fw-semibold">MÓDULO III: </span>MASAJETERAPIA RELAJANTE</p>
+                            <p><span class="fw-semibold">MÓDULO IV: </span>REFLEXOLOGÍA</p>
+                            <p><span class="fw-semibold">MÓDULO V: </span>DRENAJE LINFÁTICO</p>
+                            <p><span class="fw-semibold">MÓDULO VI: </span>TALLER ARTESANAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            PROCESO 2: LIDERAZGO TRANSFORMACIONAL
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p><span class="fw-semibold">MÓDULO I: </span>ATENCIÓN AL CLIENTE</p>
+                            <p><span class="fw-semibold">MÓDULO II: </span>PLAN DE VENTAS </p>
+                            <p><span class="fw-semibold">MÓDULO III: </span>EMPRESA SALUDABLE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABS -->
+        <div class="col-12 col-md-10 mb-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">MASAJETERAPIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">LIDERAZGO TRANSFORMACIONAL</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-md-10 bg-info" id="proceso1">
+
+            <!-- MASAJETERAPIA RELAJANTE -->
+            <div class="card-proceso">
+                <h6>MÓDULO I: MASAJETERAPIA RELAJANTE</h6>
+                <p>1. Masajeterapia Relajante:</p>
+                <p>¡Aprende 6 técnicas indispensables para un masajeterapeuta!</p>
+                <ul>
+                    <li>Masaje relajante – descontracturante.</li>
+                    <li>Masaje con piedras calientes.</li>
+                    <li>Masaje con bambú.</li>
+                    <li>Aromaterapia.</li>
+                    <li>Rehabilitación y alineación energética.</li>
+                    <li>Biomagnetismo energético vital.</li>
+                </ul>
+            </div>
+
+            <!-- MASAJES TERAPÉUTICOS DE SPA -->
+            <div class="card-proceso">
+                <h6>MÓDULO II: MASAJES TERAPÉUTICOS DE SPA</h6>
+                <p>2. Masajes Terapéuticos de SPA:</p>
+                <p>¡Aprende 6 técnicas de masaje enfocados en estrés y relajación!</p>
+                <ul>
+                    <li>Masaje relajante – descontracturante.</li>
+                    <li>Masaje con piedras calientes.</li>
+                    <li>Masaje con bambú.</li>
+                    <li>Aromaterapia.</li>
+                    <li>Rehabilitación y alineación energética.</li>
+                    <li>Biomagnetismo energético vital.</li>
+                </ul>
+            </div>
+
+            <!-- MASAJETERAPIA RELAJANTE -->
+            <div class="card-proceso">
+                <h6>MÓDULO III: MASAJETERAPIA RELAJANTE</h6>
+                <p>3. Masajeterapia Relajante:</p>
+                <ul>
+                    <li>Masaje terapéutico profundo.</li>
+                    <li>Masaje con ventosas.</li>
+                    <li>Masaje deportivo.</li>
+                    <li>Rehabilitación y alineación energética.</li>
+                    <li>Biomagnetismo energético vital.</li>
+                </ul>
+            </div>
+
+            <!-- REFLEXOLOGÍA -->
+            <div class="card-proceso">
+                <h6>MÓDULO IV: REFLEXOLOGÍA</h6>
+                <p>4. Reflexología</p>
+            </div>
+
+            <!-- DRENAJE LINFÁTICO -->
+            <div class="card-proceso">
+                <h6>MÓDULO V: DRENAJE LINFÁTICO</h6>
+                <p>5. Drenaje Linfático Manual </p>
+            </div>
+
+            <!-- TALLER ARTESANAL -->
+            <div class="card-proceso">
+                <h6>MÓDULO VI: TALLER ARTESANAL</h6>
+                <p>6. Elaboración de jabón artesanal terapéutico.</p>
+                <p>7. Elaboración de esencias naturales para masajeterapia.</p>
+                <p>8. Elaboración de velas aromáticas terapéuticas.</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-10 bg-danger" id="proceso2">
+            <div class="card-proceso">
+                <p>Atención al Cliente</p>
+                <p>Plan de Ventas</p>
+                <p>Empresa saludable</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

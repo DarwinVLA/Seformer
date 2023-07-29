@@ -14,3 +14,7 @@ def sobre_nosotros(request):
 
 def admision_requisitos(request):
     return render(request, "admision_requisitos.html", {'Titulo': 'Seformer'})
+
+
+def capacitaciones(request):
+    return render(request, "capacitaciones.html", {'Titulo': 'Seformer'})
