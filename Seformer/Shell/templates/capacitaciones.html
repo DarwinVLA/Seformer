@@ -3,11 +3,11 @@
 
 {% block main_content %}
 
-<div class="container my-4">
+<div class="container my-4 px-4">
     <div class="row justify-content-center">
 
         <!-- ACCORDION -->
-        <div class="col-12 col-md-10 mb-4">
+        <div class="col-12 col-md-10 mb-5">
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -18,13 +18,14 @@
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <p><span class="fw-semibold">MÓDULO I: </span>MASAJETERAPIA RELAJANTE</p>
-                            <p><span class="fw-semibold">MÓDULO II: </span>MASAJES TERAPÉUTICOS DE SPA</p>
-                            <p><span class="fw-semibold">MÓDULO III: </span>MASAJETERAPIA RELAJANTE</p>
-                            <p><span class="fw-semibold">MÓDULO IV: </span>REFLEXOLOGÍA</p>
-                            <p><span class="fw-semibold">MÓDULO V: </span>DRENAJE LINFÁTICO</p>
-                            <p><span class="fw-semibold">MÓDULO VI: </span>TALLER ARTESANAL</p>
+                        <div class="accordion-body accordion-txt">
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO I: </span>MASAJETERAPIA RELAJANTE</p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO II: </span>MASAJES TERAPÉUTICOS DE SPA
+                            </p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO III: </span>MASAJETERAPIA RELAJANTE</p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO IV: </span>REFLEXOLOGÍA</p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO V: </span>DRENAJE LINFÁTICO</p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO VI: </span>TALLER ARTESANAL</p>
                         </div>
                     </div>
                 </div>
@@ -37,10 +38,10 @@
                         </button>
                     </h2>
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <p><span class="fw-semibold">MÓDULO I: </span>ATENCIÓN AL CLIENTE</p>
-                            <p><span class="fw-semibold">MÓDULO II: </span>PLAN DE VENTAS </p>
-                            <p><span class="fw-semibold">MÓDULO III: </span>EMPRESA SALUDABLE</p>
+                        <div class="accordion-body accordion-txt">
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO I: </span>ATENCIÓN AL CLIENTE</p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO II: </span>PLAN DE VENTAS </p>
+                            <p><span class="fw-semibold accordion-modulo">MÓDULO III: </span>EMPRESA SALUDABLE</p>
                         </div>
                     </div>
                 </div>
@@ -51,16 +52,16 @@
         <div class="col-12 col-md-10 mb-4">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" id="link_p1" >MASAJETERAPIA</a>
+                    <a class="nav-link active cursor" id="link_p1">MASAJETERAPIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="link_p2">LIDERAZGO TRANSFORMACIONAL</a>
+                    <a class="nav-link cursor" id="link_p2">LIDERAZGO TRANSFORMACIONAL</a>
                 </li>
             </ul>
         </div>
 
+        <!-- PROCESO 1 -->
         <div class="col-12 col-md-10" id="proceso1">
-
             <!-- MASAJETERAPIA RELAJANTE -->
             <div class="card-proceso">
                 <h6>MÓDULO I: MASAJETERAPIA RELAJANTE</h6>
@@ -125,8 +126,9 @@
             </div>
         </div>
 
+        <!-- PROCESO 2 -->
         <div class="col-12 col-md-10" id="proceso2">
-            <div class="card-proceso">
+            <div class="card-proceso text-center">
                 <p>Atención al Cliente</p>
                 <p>Plan de Ventas</p>
                 <p>Empresa saludable</p>
@@ -136,16 +138,16 @@
 </div>
 
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#proceso2").hide()
     });
-    $( "#link_p1" ).on( "click", function() {
+    $("#link_p1").on("click", function () {
         $("#proceso2").hide()
         $("#proceso1").show()
         $("#link_p2").removeClass("active");
         $("#link_p1").addClass("active")
     });
-    $( "#link_p2" ).on( "click", function() {
+    $("#link_p2").on("click", function () {
         $("#proceso1").hide()
         $("#proceso2").show()
         $("#link_p1").removeClass("active");

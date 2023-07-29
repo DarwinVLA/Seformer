@@ -62,8 +62,43 @@
   margin-bottom: 0;
 }
 
+.card-proceso {
+  width: 100%;
+  padding: 25px 25px 10px 25px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.card-proceso:last-child {
+  margin-bottom: 0;
+}
+
+#proceso2 {
+  min-height: 255px;
+  display: flex;
+  align-items: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
+  .banner-title h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .banner-title h3 {
+    font-size: 16px;
+  }
   .card-docentes-body p {
     text-align: justify;
+  }
+  .accordion-txt {
+    text-align: center;
+  }
+  .accordion-modulo {
+    display: block;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
