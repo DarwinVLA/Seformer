@@ -51,15 +51,15 @@
         <div class="col-12 col-md-10 mb-4">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">MASAJETERAPIA</a>
+                    <a class="nav-link active" id="link_p1" >MASAJETERAPIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">LIDERAZGO TRANSFORMACIONAL</a>
+                    <a class="nav-link" id="link_p2">LIDERAZGO TRANSFORMACIONAL</a>
                 </li>
             </ul>
         </div>
 
-        <div class="col-12 col-md-10 bg-info" id="proceso1">
+        <div class="col-12 col-md-10" id="proceso1">
 
             <!-- MASAJETERAPIA RELAJANTE -->
             <div class="card-proceso">
@@ -125,7 +125,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-10 bg-danger" id="proceso2">
+        <div class="col-12 col-md-10" id="proceso2">
             <div class="card-proceso">
                 <p>Atención al Cliente</p>
                 <p>Plan de Ventas</p>
@@ -134,5 +134,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $("#proceso2").hide()
+    });
+    $( "#link_p1" ).on( "click", function() {
+        $("#proceso2").hide()
+        $("#proceso1").show()
+        $("#link_p2").removeClass("active");
+        $("#link_p1").addClass("active")
+    });
+    $( "#link_p2" ).on( "click", function() {
+        $("#proceso1").hide()
+        $("#proceso2").show()
+        $("#link_p1").removeClass("active");
+        $("#link_p2").addClass("active")
+    });
+</script>
 
 {% endblock %}
